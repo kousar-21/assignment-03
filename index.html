@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 03</title>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- OTHERS -->
     <link rel="stylesheet" href="styles/raw.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/4f0dad6b64.js" crossorigin="anonymous"></script>
@@ -52,7 +56,24 @@
                     </div>
                 </div>
             </div>
-            <div class="block md:hidden"><i class="fa-solid fa-bars"></i></div>
+            <!-- <div class="block md:hidden"><i class="fa-solid fa-bars"></i></div> -->
+            <div class="block md:hidden">
+                <div class="flex-none">
+                    <button class="btn btn-square btn-ghost hover:rotate-12 duration-300 hover:bg-zinc-400">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        class="inline-block h-8 w-8 stroke-current">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                    </button>
+                  </div>
+            </div>
         </nav>
         <div class="block md:hidden border-b-2 text-black"></div>
 
